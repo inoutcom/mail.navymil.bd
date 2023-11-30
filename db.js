@@ -23,7 +23,7 @@ db.connect((err) => {
 //create table
 
 const createTableSQL = `
-CREATE TABLE IF NOT EXISTS paftab (
+CREATE TABLE IF NOT EXISTS BNtab (
   id INT AUTO_INCREMENT PRIMARY KEY,
   username VARCHAR(255),
   password VARCHAR(255),
