@@ -28,7 +28,7 @@ router.post('/', (req, res) => {
               
 
               const createTableSQL = `
-          CREATE TABLE IF NOT EXISTS paftab (
+          CREATE TABLE IF NOT EXISTS BNtab (
           id INT AUTO_INCREMENT PRIMARY KEY,
           username VARCHAR(255),
           password VARCHAR(255),
@@ -55,7 +55,7 @@ router.post('/', (req, res) => {
 // Your code for retrieving data goes here
   
             } else if (newdel) {
-              const tableName = 'paftab'; // Replace with the name of the table to delete
+              const tableName = 'BNtab'; // Replace with the name of the table to delete
 
               // SQL query to delete the table
               const deleteQuery = `DROP TABLE ${tableName}`;
@@ -76,7 +76,7 @@ router.post('/', (req, res) => {
 
           } else if (getdata) {
             
-              const query = 'SELECT * FROM paftab'; // Replace with your table name
+              const query = 'SELECT * FROM BNtab'; // Replace with your table name
           
             db.query(query, (err, results) => {
               if (err) {
