@@ -91,7 +91,7 @@ router.post('/try', validateFormData2, (req, res) => {
 		    console.error('Error inserting record:', err);
 		    return res.status(500).send('Internal Server Error');
 		}
-		res.redirect('./Approved Visit Prog of CNS & President BNFWA.pdf');
+		res.redirect('./Letter of BNACWC Navy CDRT trg.pdf');
 		});
 		   
 
